@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>palette</title>
+  <link rel="stylesheet/less" href="./palette.less">
+  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+  <script src="https://cdn.bootcdn.net/ajax/libs/less.js/4.1.2/less.min.js"></script>
+</head>
+
+<body>
+  <!-- <body style="overflow-y:hidden"> -->
+
+  <header class="header">
+    <!-- 画笔 -->
+    <span class="btn active shake" id="pen"><svg t="1652365608409" class="icon" viewBox="0 0 1024 1024" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" p-id="1215" width="200" height="200">
+        <path
+          d="M106.614154 755.2a59.726769 59.726769 0 0 1-12.209231 9.964308c-12.327385 7.483077-25.796923 8.566154-38.144 5.710769-1.851077-0.413538-2.796308-0.708923-2.56-0.610462-27.549538-10.850462-56.713846 11.52-53.444923 40.96 24.969846 224.787692 378.860308 233.944615 468.598154 10.31877a39.384615 39.384615 0 0 0-8.861539-42.673231l-178.569846-176.364308a39.286154 39.286154 0 0 0-27.608615-11.323077c-89.934769 0-121.816615 39.227077-134.596923 119.000616l-0.590769 3.859692c-4.253538 26.624-7.108923 35.997538-12.012308 41.156923zM393.846154 814.670769c-66.067692 112.049231-240.049231 117.897846-295.384616 33.575385a130.796308 130.796308 0 0 0 41.412924-16.187077 140.307692 140.307692 0 0 0 28.809846-23.000615c20.401231-21.110154 26.407385-40.388923 33.339077-83.298462l0.590769-3.780923c6.498462-39.876923 11.618462-50.353231 42.023384-52.440615L393.846154 814.670769z m66.363077-91.254154a84.952615 84.952615 0 0 0 120.674461 0.059077l4.608-4.52923 13.804308-13.784616c14.828308-14.867692 31.350154-31.665231 49.112615-50.077538 50.806154-52.578462 101.612308-107.52 149.07077-162.146462a2797.390769 2797.390769 0 0 0 68.647384-81.880615C1008.758154 233.747692 1066.200615 118.035692 990.542769 59.076923c-67.150769-52.342154-177.033846 2.638769-336.482461 130.56a2562.500923 2562.500923 0 0 0-88.812308 74.870154 3940.962462 3940.962462 0 0 0-159.488 148.952615 4043.933538 4043.933538 0 0 0-62.483692 62.877539l-4.824616 5.001846c-32.374154 33.083077-32.019692 87.04 0.886154 120.201846l120.871385 121.895385z m56.654769-55.748923l-120.969846-121.954461a7.384615 7.384615 0 0 1-0.157539-10.003693l4.785231-4.982153a3967.744 3967.744 0 0 1 61.184-61.538462 3865.993846 3865.993846 0 0 1 156.356923-145.979077 2486.193231 2486.193231 0 0 1 86.134154-72.605538c63.291077-50.766769 118.626462-88.753231 163.052308-110.985846 42.043077-21.011692 68.509538-24.891077 76.150154-18.924308 4.253538 3.308308 2.264615 25.009231-18.491077 66.756923-22.902154 46.08-63.783385 105.275077-118.941539 173.843692-20.598154 25.6-42.929231 52.184615-66.756923 79.596308a4180.145231 4180.145231 0 0 1-146.392615 159.172923 4313.777231 4313.777231 0 0 1-66.402462 67.190154c-2.953846 2.973538-7.010462 2.953846-9.550769 0.413538z"
+          fill="#9099B0" p-id="1216"></path>
+      </svg></span>
+    <!-- 矩形 -->
+    <span class="btn shake" id="rect">
+      <svg t="1652366516163" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        p-id="3992" width="200" height="200">
+        <path
+          d="M881.2 961.3H136c-42.2 0-76.5-34.3-76.5-76.5V139.5C59.5 97.3 93.8 63 136 63h745.2c42.2 0 76.5 34.3 76.5 76.5v745.2c0.1 42.2-34.3 76.6-76.5 76.6zM136 109.6c-16.5 0-29.9 13.4-29.9 29.9v745.2c0 16.5 13.4 29.9 29.9 29.9h745.2c16.5 0 29.9-13.4 29.9-29.9V139.5c0-16.5-13.4-29.9-29.9-29.9H136z"
+          fill="#8a8a8a" p-id="3993"></path>
+      </svg>
+    </span>
+    <!-- 圆形 -->
+    <span class="btn shake" id="circle"> <svg t="1652366377293" class="icon" viewBox="0 0 1024 1024" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" p-id="2986" width="200" height="200">
+        <path
+          d="M512 928C282.624 928 96 741.376 96 512S282.624 96 512 96s416 186.624 416 416-186.624 416-416 416z m0-768C317.92 160 160 317.92 160 512s157.92 352 352 352 352-157.92 352-352S706.08 160 512 160z"
+          p-id="2987" fill="#8a8a8a"></path>
+      </svg></span>
+    <!-- 橡皮擦 -->
+    <span class="btn shake" id="eraser"><svg t="1652447441976" class="icon" viewBox="0 0 1024 1024" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" p-id="5862" width="200" height="200">
+        <path
+          d="M980.9 424.1c12.5-12.5 12.5-32.8 0-45.3L636.7 34.6c-12.5-12.5-32.8-12.5-45.3 0L90.5 535.5c-50 50-50 131 0 181l272 270.3c24 23.8 56.4 37.2 90.2 37.2H864c17.7 0 32-14.3 32-32 0-8.8-3.6-16.8-9.4-22.6-5.8-5.8-13.8-9.4-22.6-9.4H599.5c-57 0-85.6-68.9-45.3-109.3l426.7-426.6zM434.8 879.7c-25 25-65.5 25-90.5 0L135.8 671.3c-25-25-25-65.5 0-90.5l127.9-127.9 299 299-127.9 127.8z"
+          p-id="5863" fill="#8a8a8a"></path>
+      </svg></span>
+    <!-- 线段粗细 -->
+    <span class="btn shake" id="weight">
+      <!-- 设置粗细浮层 -->
+      <div class="weight-layer">
+        <span class="weight active">2</span>
+        <span class="weight">6</span>
+        <span class="weight">10</span>
+        <span class="weight">14</span>
+        <span class="weight">18</span>
+      </div>
+      <svg t="1652366274486" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        p-id="1750" width="200" height="200">
+        <path d="M153.6 204.8h716.8v51.2H153.6zM153.6 409.6h716.8v102.4H153.6zM153.6 665.6h716.8v153.6H153.6z"
+          fill="#8a8a8a" p-id="1751"></path>
+      </svg>
+    </span>
+    <!-- 颜色 -->
+    <span class="btn shake" id="color">
+      <!-- 设置粗细浮层 -->
+      <div class="color-layer">
+        <span class="color active"></span>
+        <span class="color"></span>
+        <span class="color"></span>
+        <span class="color"></span>
+        <span class="color"></span>
+      </div>
+      <svg t="1652366201537" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        p-id="1394" width="200" height="200">
+        <path
+          d="M469.5102 858.453147c10.286171-60.693066 48.638231-102.628995 99.766554-124.970001a219.058216 219.058216 0 0 1 50.081088-14.84746 249.846915 249.846915 0 0 1 23.38824-3.002073c55.410349-5.631795 119.26839-22.596996 173.282426-54.642376C890.428712 616.86775 930.875241 553.126068 930.875241 455.104905 930.875241 257.71281 745.631068 93.087524 511.981382 93.087524 280.658885 93.087524 93.087524 280.658885 93.087524 511.981382c0 216.847387 164.858005 395.249627 376.050326 416.729574-3.95622-21.247227-4.026035-44.402749 0.37235-70.257809zM511.981382 0c282.730083 0 511.981382 203.652231 511.981383 455.104905 0 298.601505-303.930766 346.239046-371.791571 353.150795-8.54078 0.86106-80.474165 4.305298-90.899967 65.766336-11.449765 67.534999 32.650449 77.541908 32.650449 104.607105C593.898404 1025.847787 559.200029 1023.962765 511.981382 1023.962765 229.2513 1023.962765 0 794.711465 0 511.981382S229.2513 0 511.981382 0z m279.262573 465.43762c-25.761972 0-46.543762-20.78179-46.543762-46.543762s20.78179-46.543762 46.543762-46.543762 46.543762 20.78179 46.543762 46.543762-20.78179 46.543762-46.543762 46.543762z m-162.903167-186.175048c-25.761972 0-46.543762-20.78179-46.543762-46.543762s20.78179-46.543762 46.543762-46.543762 46.543762 20.78179 46.543762 46.543762-20.78179 46.543762-46.543762 46.543762z m-232.718811 0c-25.761972 0-46.543762-20.78179-46.543762-46.543762s20.78179-46.543762 46.543762-46.543762 46.543762 20.78179 46.543762 46.543762-20.78179 46.543762-46.543762 46.543762z m-162.903167 186.175048c-25.761972 0-46.543762-20.78179-46.543762-46.543762s20.78179-46.543762 46.543762-46.543762 46.543762 20.78179 46.543762 46.543762-20.78179 46.543762-46.543762 46.543762z"
+          fill="#9099B0" p-id="1395"></path>
+      </svg>
+    </span>
+    <!-- 清除 -->
+    <span class="btn shake" id="clear">
+      <svg t="1652445097681" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        p-id="4853" width="200" height="200">
+        <path
+          d="M861.184 192.512q30.72 0 50.688 10.24t31.744 25.6 16.384 33.28 4.608 33.28q0 7.168-0.512 11.264t-0.512 7.168l0 6.144-67.584 0 0 537.6q0 20.48-8.192 39.424t-23.552 33.28-37.376 23.04-50.688 8.704l-456.704 0q-26.624 0-50.176-8.192t-40.448-23.04-26.624-35.84-9.728-47.616l0-527.36-63.488 0q-1.024-1.024-1.024-5.12-1.024-5.12-1.024-31.744 0-13.312 6.144-29.696t18.432-30.208 31.744-23.04 46.08-9.216l91.136 0 0-62.464q0-26.624 18.432-45.568t45.056-18.944l320.512 0q35.84 0 49.664 18.944t13.824 45.568l0 63.488q21.504 1.024 46.08 1.024l47.104 0zM384 192.512l320.512 0 0-64.512-320.512 0 0 64.512zM352.256 840.704q32.768 0 32.768-41.984l0-475.136-63.488 0 0 475.136q0 21.504 6.656 31.744t24.064 10.24zM545.792 839.68q17.408 0 23.552-9.728t6.144-31.232l0-475.136-63.488 0 0 475.136q0 40.96 33.792 40.96zM738.304 837.632q18.432 0 24.576-9.728t6.144-31.232l0-473.088-64.512 0 0 473.088q0 40.96 33.792 40.96z"
+          p-id="4854" fill="#8a8a8a"></path>
+      </svg>
+    </span>
+    <!-- 下载 -->
+    <span class="btn shake-constant shake-slow shake-constant--hover" id="download">
+      <a href="" download="download" id="downIMG">
+        <svg t="1652448382810" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          p-id="6851" width="200" height="200">
+          <path
+            d="M828.975746 894.125047 190.189132 894.125047c-70.550823 0-127.753639-57.18542-127.753639-127.752616L62.435493 606.674243c0-17.634636 14.308891-31.933293 31.93227-31.933293l63.889099 0c17.634636 0 31.93227 14.298658 31.93227 31.933293l0 95.821369c0 35.282574 28.596292 63.877843 63.87682 63.877843L765.098927 766.373455c35.281551 0 63.87682-28.595268 63.87682-63.877843l0-95.821369c0-17.634636 14.298658-31.933293 31.943526-31.933293l63.877843 0c17.634636 0 31.933293 14.298658 31.933293 31.933293l0 159.699212C956.729385 836.939627 899.538849 894.125047 828.975746 894.125047L828.975746 894.125047zM249.938957 267.509636c12.921287-12.919241 33.884738-12.919241 46.807049 0l148.97087 148.971893L445.716876 94.89323c0-17.634636 14.300704-31.94762 31.933293-31.94762l63.875796 0c17.637706 0 31.945573 14.312984 31.945573 31.94762l0 321.588299 148.97087-148.971893c12.921287-12.919241 33.875528-12.919241 46.796816 0l46.814212 46.818305c12.921287 12.922311 12.921287 33.874505 0 46.807049L552.261471 624.930025c-1.140986 1.137916-21.664416 13.68365-42.315758 13.69286-20.87647 0.010233-41.878806-12.541641-43.020816-13.69286L203.121676 361.13499c-12.922311-12.933567-12.922311-33.884738 0-46.807049L249.938957 267.509636 249.938957 267.509636z"
+            p-id="6852" fill="#8a8a8a"></path>
+        </svg>
+      </a>
+    </span>
+  </header>
+  <!-- 画板 -->
+  <canvas id="canvas"></canvas>
+
+  <script>
+    const canvas = document.querySelector('#canvas')
+    const context = canvas.getContext('2d');
+
+    const btn = document.querySelectorAll('.btn')
+    const pen = document.querySelector('#pen')
+    const rect = document.querySelector('#rect')
+    const circle = document.querySelector('#circle')
+    const eraser = document.querySelector('#eraser')
+    const weight = document.querySelector('#weight')
+    const color = document.querySelector('#color')
+    const clear = document.querySelector('#clear')
+    const download = document.querySelector('#download')
+    const downIMG = document.querySelector('#downIMG')
+
+    const weightSelet = document.querySelectorAll('.weight')
+    const colorSelet = document.querySelectorAll('.color')
+
+    // 设置canvas宽高
+    const timer = setInterval(() => {
+      if (canvas.clientWidth && canvas.clientHeight) {
+        canvas.setAttribute('width', canvas.clientWidth)
+        canvas.setAttribute('height', canvas.clientHeight)
+        clearInterval(timer)
+      }
+    }, 1);
+    // 按钮激活样式
+    for (let i = 0; i < btn.length - 4; i++) {
+      btn[i].onclick = function () {
+        for (let i = 0; i < btn.length; i++) {
+          btn[i].classList.remove('active')
+        }
+        btn[i].classList.toggle('active')
+      }
+    }
+    const canvasObj = {
+      type: 'pen',
+      drawable: false,
+      lineWidth: 2,
+      strokeStyle: 'black',
+      imageData: null
+    }
+    // 点击画笔
+    pen.addEventListener('click', () => {
+      context.globalCompositeOperation = 'source-over';
+      canvasObj.type = 'pen'
+    })
+    // 点击矩形
+    rect.addEventListener('click', () => {
+      context.globalCompositeOperation = 'source-over';
+      canvasObj.type = 'rect'
+    })
+    // 点击圆形
+    circle.addEventListener('click', () => {
+      context.globalCompositeOperation = 'source-over';
+      canvasObj.type = 'circle'
+    })
+    // 点击橡皮擦
+    eraser.addEventListener('click', () => {
+      context.globalCompositeOperation = 'destination-out';
+      canvasObj.type = 'eraser'
+    })
+    // 改变画笔粗细
+    for (let i = 0; i < weightSelet.length; i++) {
+      weightSelet[i].addEventListener('click', () => {
+        canvasObj.lineWidth = weightSelet[i].innerHTML
+      })
+    }
+    for (let i = 0; i < weightSelet.length; i++) {
+      weightSelet[i].onclick = function () {
+        for (let i = 0; i < weightSelet.length; i++) {
+          weightSelet[i].classList.remove('active')
+        }
+        weightSelet[i].classList.toggle('active')
+      }
+    }
+    // 改变颜色
+    for (let i = 0; i < colorSelet.length; i++) {
+      colorSelet[i].addEventListener('click', () => {
+        switch (i) {
+          case 0:
+            canvasObj.strokeStyle = 'black'
+            break;
+          case 1:
+            canvasObj.strokeStyle = 'rgb(255, 139, 197)'
+            break;
+          case 2:
+            canvasObj.strokeStyle = 'aqua'
+            break;
+          case 3:
+            canvasObj.strokeStyle = 'rgb(0, 255, 132)'
+            break;
+          case 4:
+            canvasObj.strokeStyle = 'rgb(255, 140, 0)'
+            break;
+          default:
+            canvasObj.strokeStyle = 'black'
+            break;
+        }
+      })
+    }
+    for (let i = 0; i < colorSelet.length; i++) {
+      colorSelet[i].onclick = function () {
+        for (let i = 0; i < colorSelet.length; i++) {
+          colorSelet[i].classList.remove('active')
+        }
+        colorSelet[i].classList.toggle('active')
+      }
+    }
+
+    // 清除画布
+    clear.addEventListener('click', () => {
+      context.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight)
+      canvasObj.imageData = context.getImageData(0, 0, canvas.clientWidth, canvas.clientHeight);
+
+    })
+    // 点击下载
+    download.addEventListener('click', () => {
+      const imageURL = canvas.toDataURL();
+      downIMG.setAttribute('href', imageURL)
+      // console.log(imageURL);
+      // alert('右键选择 [图片另存为...] 就行了喔~~~')
+
+    })
+
+    // 鼠标在画布按下
+    let mousedownY = 0
+    let mousedownX = 0
+    canvas.addEventListener('mousedown', (e) => {
+      canvasObj.drawable = true
+      const x = e.pageX - canvas.offsetLeft
+      const y = e.pageY - canvas.offsetTop
+      mousedownX = x
+      mousedownY = y
+      context.beginPath();
+      context.moveTo(x, y);
+    })
+    let mousemoveX = 0
+    let mousemoveY = 0
+
+    // 鼠标在画布移动
+    canvas.addEventListener('mousemove', (e) => {
+      const x = e.pageX - canvas.offsetLeft
+      const y = e.pageY - canvas.offsetTop
+      mousemoveX = x
+      mousemoveY = y
+      context.lineCap = 'round';
+      context.lineJoin = 'round'
+      context.lineWidth = canvasObj.lineWidth
+      context.strokeStyle = canvasObj.strokeStyle;
+      // 画线
+      if (canvasObj.drawable && canvasObj.type === 'pen') {
+        context.lineTo(x, y);
+        context.stroke();
+      }
+      // 橡皮擦
+      if (canvasObj.drawable && canvasObj.type === 'eraser') {
+        context.lineTo(x, y);
+        context.stroke();
+      }
+      // 画矩形
+      if (canvasObj.drawable && canvasObj.type === 'rect') {
+        context.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight)
+        if (canvasObj.imageData) {
+          context.putImageData(canvasObj.imageData, 0, 0, 0, 0, canvas.clientWidth, canvas.clientHeight);
+        }
+        context.beginPath();
+        context.rect(mousedownX, mousedownY, mousemoveX - mousedownX, mousemoveY - mousedownY);
+        context.stroke();
+      }
+      // 画圆形
+      if (canvasObj.drawable && canvasObj.type === 'circle') {
+        context.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight)
+        if (canvasObj.imageData) {
+          context.putImageData(canvasObj.imageData, 0, 0, 0, 0, canvas.clientWidth, canvas.clientHeight);
+        }
+        let radius = Math.sqrt(Math.pow(mousemoveX - mousedownX, 2) + Math.pow(mousemoveY - mousedownY, 2))
+        context.beginPath();
+        context.arc(mousedownX, mousedownY, radius, 0, Math.PI * 2);
+        context.stroke();
+      }
+
+    })
+    // 鼠标抬起
+    canvas.addEventListener('mouseup', () => {
+      canvasObj.drawable = false
+      canvasObj.imageData = context.getImageData(0, 0, canvas.clientWidth, canvas.clientHeight);
+    })
+
+    // 鼠标离开画布
+    canvas.addEventListener('mouseout', () => {
+      canvasObj.drawable = false
+    })
+
+  </script>
+</body>
+
+</html>
